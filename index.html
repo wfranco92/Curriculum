@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Willian Franco</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script>
+function validar() {
+  var ok = true;
+  var msg = "Debes escribir algo en los campos:\n";
+  if(document.getElementById('name').value == "")
+  {
+    msg += "- Nombre \n";
+    ok = false;
+  }
+
+  if(document.getElementById('mail').value == "")
+  {
+    msg += "- Correo\n";
+    ok = false;
+  }
+
+  if(document.getElementById('mesage').value == "")
+  {
+    msg += "- Mensaje\n";
+    ok = false;
+  }
+
+  if(ok == false)
+    alert('ERROR: Debe ingresar la informacion');
+  return ok;
+}
+
+</script>
+</head>
+
+<body>
+	<header>
+		<h1>Willian Franco</h1>
+		<nav>
+			<ul>
+				<li><a href="#"><strong>Inicio</strong></a></li>
+				<li><a href="#"><strong>Acerca de Mi</strong></a></li>
+				<li><a href="#"><strong>Servicios</strong></a></li>
+				<li><a href="#"><strong>Portafolio</strong></a></li>
+				<li><a href="#"><strong>Contacto</strong></a></li>
+			</ul>
+		</nav>	
+	</header>
+	<div id="banner">
+	  <div id="info">
+		<h2>Hola!!!</h2>
+		<h1>Soy Willian</h1>
+		<h3>Ingeniero de sistemas</h3>
+		</div>
+		<div id="foto">
+	    <img src="images/foto.jpg" width="250" height="300" alt="Willian_franco"/> 
+		</div>
+</div>
+	<div id="about">
+	 	<h1 align="center">Acerca de mi</h1>
+		<div id="profile"><h4 align="center">Perfil</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		</div>
+		<div id="cursos"><h4 align="center">Cursos</h4>
+			<ul>
+				<li>Curso 1</li>
+				<br>
+				<li>Curso 2</li>
+				<br>
+				<li>Curso 3</li>
+				<br>
+				<li>Curso 4</li>
+			</ul>
+		</div>
+		<div id="experiencia"><h4 align="center">Experiencia</h4>
+		<ol>
+				<li>Experiencia A</li>
+			<br>
+				<li>Experiencia B</li>
+			<br>
+				<li>Experiencia C</li>
+			<br>
+				<li>Experiencia D</li>
+			</ol>
+		</div>
+	</div>
+	<div id="services">
+		
+	 	<h1 align="center">Servicios</h1>
+		
+		<div id="service1">
+			<img class="format_img" src="images/service1.jpg" width="200" height="200" alt="Computador"/>
+<h4 align="center">Reparacion de Computadores</h4>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+		
+		<div id="service2">
+			<img class="format_img" src="images/service2.jpg" width="200" height="200" alt="Computador"/>
+			<h4 align="center">Desarrollo Web</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+		
+		<div id="service3">
+			<img class="format_img" src="images/service3.jpg" width="200" height="200" alt="Computador"/>
+			<h4 align="center">Desarrollo Movil</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+		</div>
+	</div>
+	
+<div id="portafolio">
+		<br>
+  <h1 align="center">Portafolio</h1>
+	<table align="center" width="200" border="1">
+  <tbody>
+    <tr>
+      <td><img src="images/folio1.jpg" width="200" height="120" alt="Logo JAVA"/></td>
+      <td><img src="images/folio2.jpg" width="200" height="120" alt="Logo JAVASCRIPT"/></td>
+      <td><img src="images/folio3.jpg" width="200" height="120" alt="Logo PHP"/></td>
+    </tr>
+    <tr>
+      <td><img src="images/folio4.jpg" width="200" height="120" alt="Logo MYSQL"/></td>
+      <td><img src="images/folio5.jpg" width="200" height="120" alt="Logo Android"/></td>
+      <td><img src="images/folio6.png" width="200" height="120" alt="Logo HTML"/></td>
+    </tr>
+  </tbody>
+</table>
+	</div>
+	
+	<div id="contacto">
+		<br>
+		<h1 align="center">Contacto</h1>
+		<form action="" onsubmit="return validar()" >
+			<p >Nombre</p><input type="text" id="name">
+			<p> interesado en cual servicio?</p>
+			<select>
+				<option selected value="0">Lista de Servicios</option>
+				<option value="1">Reparacion de Computadores</option>
+				<option value="2">Desarrollo Web</option>
+				<option value="3">Desarrollo Movil</option>
+			</select>
+			<p>Correo</p><input id="correo" type="email" id="mail">
+			<p>Mensaje</p><textarea id="mesage"></textarea>
+			<input id="enviar" type="submit" value="Enviar">
+		</form>
+	
+	</div>
+<footer align="center"><br>24 de Septiembre de 2019</footer>
+</body>
+</html>

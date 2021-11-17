@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 1000px;
+	height: 2600px;
+	margin: 0 auto;
+	border: thin solid #000000;
+	background-color: #BFBFBF;
+	font-family: 'Lato', sans-serif;
+}
+header{
+	background-color: #F6E9FF;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	top: 10px;
+	left: 0px;
+}
+header h1{
+	position: absolute;
+	width: 35%;
+	top: 15px;
+	left: 0px;
+	text-align: center;
+	font-size: 45px;
+}
+header nav{
+	position: absolute;
+	width: 55%;
+	top: 45px;
+	left: 40%;
+	align-content: right;
+}
+ul{
+	float: right;
+}
+nav ul li{
+	display: inline;
+	padding-right: 6px;
+	border-right: 2px solid #000000 ;
+}
+li:last-child{
+	border-right: 0;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 21px;
+}
+a:hover{
+	font-size: 24px;
+	color:indigo;
+}
+#banner{
+	position: absolute;
+	width: 1000px;
+	height: 450px;
+	margin-top: 25px;
+	background-color: #0C0825;
+}
+#info{
+	position: relative;
+	margin-top: 140px;
+	width: 48%;
+}
+#banner h1, h2, h3{
+	color: white;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+#foto{
+	position: absolute;
+	width: 48%;
+	left: 48%;
+	top: 80px;
+	text-align: center;
+}
+#about{
+	position: absolute;
+	width: 1000px;
+	height: 450px;
+	margin-top: 490px;
+	background-color: #F6E9FF;
+}
+#profile{
+	position: absolute;
+	margin-top: 20px;
+	left: 2%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+#cursos{
+	position: absolute;
+	margin-top: 20px;
+	left: 34%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+#experiencia{
+	position: absolute;
+	margin-top: 20px;
+	left: 66%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+#cursos ul{
+	position: absolute;
+	left: 30%;
+}
+#experiencia ol{
+	position: absolute;
+	left: 25%;
+}
+#services{
+	position: absolute;
+	top: 1085px;
+	width: 1000px;
+	height: 450px;
+	margin-top: 25px;
+	background-color: #FFFFFF;
+}
+#service1{
+	position: absolute;
+	margin-top: 20px;
+	left: 2%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+#service2{
+	position: absolute;
+	margin-top: 20px;
+	left: 34%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+#service3{
+	position: absolute;
+	margin-top: 20px;
+	left: 66%;
+	width: 30%;
+	height: 300px;
+	text-align: justify;
+}
+.format_img{
+	border-radius: 100%;
+	position: relative;
+	left: 20%
+}
+#portafolio{
+	background-color: #F6E9FF;
+	position: relative;
+	margin-top: 1430px;
+	height: 450px;
+}
+#contacto{
+	background-color: white;
+	position: relative;
+	margin-top: 17px;
+	height: 500px;
+	font-size: 18px;
+}
+#enviar{
+	height: 50px;
+	width: 200px;
+	background: #000000;
+	color: #FFFFFF;
+	margin-top: 0px;
+	font-size: 20px;
+	position: absolute;
+	top: 400px;
+	left: 400px;
+}
+form{
+	width: 90%;
+	float: right
+}
+form p{
+	width: 130px;
+	text-align: right
+}
+form input{
+	position: absolute;
+	top: 132px;
+	left: 300px;
+	width: 550px;
+}
+form select{
+	position: absolute;
+	top: 175px;
+	left: 300px;
+	width: 200px;
+	height: 40px;
+}
+#correo{
+	position: absolute;
+	top: 235px;
+	left: 300px;
+	width: 550px
+}
+textarea{
+	position: absolute;
+	top: 275px;
+	left: 300px;
+	width: 550px;
+	height: 100px
+}
+footer{
+	background-color: #0C0825;
+	color:white;
+	height: 60px;
+}
